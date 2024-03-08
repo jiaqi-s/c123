@@ -4,7 +4,7 @@ int main(int argc, char *argv[]){
     
 	// Enter your code under here to read the filename from the command line
 	if (argc < 2) { 
-        printf("Error. Expected 1 filename.\n");
+        printf("Error. Expected 1 filename.");
         return 1;
     }
 
