@@ -1,28 +1,19 @@
 #include <stdio.h>
+
 int main(int argc, char *argv[]){
     
 	// Enter your code under here to read the filename from the command line
-	if (argc < 2) {
-        printf("Usage: %s <filename>\n", argv[0]);
-        return 1;
-    }
-    if (argc < 2) {
+	if (argc < 2) { 
         printf("Error. Expected 1 filename.\n");
         return 1;
     }
 
-    // 检查文件名是否为"number.txt"
-    if (strcmp(argv[1], "number.txt") != 0) {
-        printf("Error. Cannot open requested file.\n");
-        return 1;
-    }
-	
 	// Read number from file - do not edit
 	double num;
 	FILE *fptr;
 	fptr = fopen(argv[1], "r");
 	if(fptr == NULL) { // display error if can't open file
-        printf("Error. Not able to open the file.");
+        printf("Error. Cannot open requested file.");
 		return 1;
     }
 	fscanf(fptr, "%lf", &num);
