@@ -6,8 +6,6 @@ int main(int argc, char *argv[]){
         printf("Usage: %s <filename>\n", argv[0]);
         return 1;
     }
-    const char* filename = argv[1];
-    printf("The file name provided is: %s\n", filename);
 	
 	
 	// Read number from file - do not edit
